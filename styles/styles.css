@@ -1,0 +1,12 @@
+.my-app {
+  width: 300px;
+}
+
+.my-collapse {
+  transition: height 200ms;
+  overflow: hidden;
+}
+
+.panel-body {
+  height: 100%;
+}

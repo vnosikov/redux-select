@@ -14,7 +14,12 @@ export function toggleOption(selectId, optionId) {
   }
 };
 
-/* toggleCollapse Declaration */
+export function toggleCollapse(selectId) {
+  return {
+    type: ActionType.TOGGLE_COLLAPSE,
+    selectId
+  }
+}
 
 /* setOpttionPattern Declaration */
 

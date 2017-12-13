@@ -1,6 +1,12 @@
-import store from '../config/store';
 import React from 'react';
 
+import {PanelGroupWrapper} from './PanelGroupWrapper';
+
 export function App() {
-  return <h1>Hola, hola! {store.getState().color}</h1>;
+  return (
+    <div className="my-app">
+      <h1>Hola, hola!</h1>
+      <PanelGroupWrapper />
+    </div>
+  );
 }
