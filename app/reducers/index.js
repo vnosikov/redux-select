@@ -1,7 +1,5 @@
 import { combineReducers } from 'redux';
 
-console.log('reducers.js');
-
 function selects(state=null, action) {
   return state;
 }

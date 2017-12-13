@@ -1,6 +1,4 @@
 
-console.log('actions.js');
-
 export const ActionType = {
   TOGGLE_OPTION: 'TOGGLE_OPTION',
   TOGGLE_COLLAPSE: 'TOGGLE_COLLAPSE',

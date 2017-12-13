@@ -1,4 +1,3 @@
-console.log('initial-state.js');
 
 const selectsAndOptionsStructure = [
   {
@@ -12,7 +11,6 @@ const selectsAndOptionsStructure = [
 ];
 
 export function buildInitialState() {
-  console.log('inside a rabbit hole');
   let result = {};
 
   result.selects = selectsAndOptionsStructure.map( (select, sind) => {
@@ -24,13 +22,13 @@ export function buildInitialState() {
 
     return {
       id: sind,
-      name: select,
+      name: select.selectName,
       isOpen: false,
+      options: options,
       textPattern: ''
     };
   });
 
   result.color = 0;
-  console.log('before leaving a rabbit hole');
   return result;
 }
