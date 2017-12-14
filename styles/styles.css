@@ -10,3 +10,8 @@
 .panel-body {
   height: 100%;
 }
+
+.my-select-options-list {
+  max-height: 80%;
+  overflow-y: scroll;
+}

@@ -1,22 +1,21 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import store from '../config/store';
 
 import {toggleCollapse} from '../actions/index';
+
+import {MySelectWrapper} from './MySelectWrapper';
 
 
 function CollapsiblePanel( {id, name, isOpen, onPanelClick} ) {
   return (
-    <div className="panel panel-default" data-id={id}>
+    <div className="panel panel-default">
       <div className="h4 panel-title">
         <a onClick={() => onPanelClick()}>
           Select {name}
         </a>
       </div>
       <div className="my-collapse" style={{height: isOpen? '150px' : '0'}}>
-      <div className="panel-body">
-        <p>addj</p>
-      </div>
+        <MySelectWrapper selectId={id}/>
       </div>
     </div>
   );

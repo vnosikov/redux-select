@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-import store from '../config/store';
 
 import {PanelGroup} from './PanelGroup';
 
