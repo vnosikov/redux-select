@@ -14,7 +14,7 @@ function CollapsiblePanel( {id, name, isOpen, onPanelClick} ) {
           Select {name}
         </a>
       </div>
-      <div className="my-collapse" style={{height: isOpen? '150px' : '0'}}>
+      <div className="my-collapse" style={{height: isOpen? '300px' : '0'}}>
         <MySelectWrapper selectId={id}/>
       </div>
     </div>

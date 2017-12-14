@@ -9,7 +9,7 @@ export function MySelect({selectId, options, onOptionClick, onInputChange}) {
   return (
     <div className="panel-body">
       <input type="text" onChange={(e) => onInputChange(e.target.value)} />
-      <div className="my-select-options-list">
+      <div className="my-select-options-list list-group">
         {optionsList}
       </div>
     </div>
@@ -17,13 +17,10 @@ export function MySelect({selectId, options, onOptionClick, onInputChange}) {
 }
 
 function Option({id, isSelected, optionName, onOptionClick}) {
+  const className = isSelected ? 'list-group-item active' : 'list-group-item';
   return (
-    <div className="checkbox">
-      <label>
-        <input type="checkbox" onChange={() => onOptionClick(id)} checked={isSelected}>
-        </input>
-        {optionName}
-      </label>
-    </div>
+    <a href="#" className={className} onClick = {() => onOptionClick(id)}>
+      {optionName}
+    </a>
   );
 }
