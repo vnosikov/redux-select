@@ -10,7 +10,9 @@ const mapStateToProps = (state, ownProps) => {
   return {
     options: targetSelect.options.filter(opt => {
       return (opt.name.toLowerCase().indexOf(textPattern) >= 0);
-    })
+    }),
+
+    textPattern: targetSelect.textPattern
   };
 };
 const mapDispatchToProps = (dispatch, ownProps) => ({

@@ -1,14 +1,14 @@
 import React from 'react';
 
 
-export function MySelect({selectId, options, onOptionClick, onInputChange}) {
+export function MySelect({selectId, options, textPattern, onOptionClick, onInputChange}) {
   const optionsList = options.map(opt => {
     return <Option key={opt.id} id={opt.id} isSelected={opt.selected} optionName={opt.name}
       onOptionClick={onOptionClick}/>
   });
   return (
     <div className="panel-body">
-      <input type="text" onChange={(e) => onInputChange(e.target.value)} />
+      <input type="text" value={textPattern} onChange={(e) => onInputChange(e.target.value)} />
       <div className="my-select-options-list list-group">
         {optionsList}
       </div>
