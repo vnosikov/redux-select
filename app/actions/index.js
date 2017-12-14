@@ -3,7 +3,7 @@ export const ActionType = {
   TOGGLE_OPTION: 'TOGGLE_OPTION',
   TOGGLE_COLLAPSE: 'TOGGLE_COLLAPSE',
   SET_OPTION_PATTERN: 'SET_OPTION_PATTERN',
-  CHANGE_BACKGROUND: 'CHANGE_BACKGROUND'
+  CHANGE_COLOR: 'CHANGE_COLOR'
 };
 
 export function toggleOption(selectId, optionId) {
@@ -29,4 +29,6 @@ export function setOptionPattern(selectId, text) {
   };
 }
 
-/* changeBackground Declaration */
+export function changeColor() {
+  return {type: ActionType.CHANGE_COLOR};
+}

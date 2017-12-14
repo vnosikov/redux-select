@@ -1,11 +1,8 @@
 import { combineReducers } from 'redux';
 
 import { selects } from './selects.js';
+import { color } from './color.js';
 
-
-function color(state=null, action) {
-  return state;
-}
 
 export default combineReducers({
   selects,

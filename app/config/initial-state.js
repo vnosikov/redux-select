@@ -29,6 +29,6 @@ export function buildInitialState() {
     };
   });
 
-  result.color = 0;
+  result.color = 'silver';
   return result;
 }

@@ -33,3 +33,9 @@
 .my-option {
   display: block;
 }
+
+.colored-rectangle {
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+}

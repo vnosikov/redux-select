@@ -1,7 +1,8 @@
 import React from 'react';
 
-import {PanelGroupWrapper} from './PanelGroupWrapper';
-import {ActiveFiltersListWrapper} from './ActiveFiltersListWrapper';
+import { PanelGroupWrapper } from './PanelGroupWrapper';
+import { ActiveFiltersListWrapper } from './ActiveFiltersListWrapper';
+import ColoredRectangle from './ColoredRectangle';
 
 
 export function App() {
@@ -10,6 +11,7 @@ export function App() {
       <h1>Hola, hola!</h1>
       <ActiveFiltersListWrapper />
       <PanelGroupWrapper />
+      <ColoredRectangle />
     </div>
   );
 }
